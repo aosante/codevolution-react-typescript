@@ -1,10 +1,12 @@
 import './App.css';
+import { Button } from './components/Button';
 import { Greet } from './components/Greet';
+import { Heading } from './components/Heading';
+import { Input } from './components/Input';
+import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
-import { Heading } from './components/Heading';
-import { Oscar } from './components/Oscar';
 
 function App() {
   const personName = {
@@ -34,6 +36,8 @@ function App() {
       <Oscar>
         <Heading>Oscar goes to London</Heading>
       </Oscar>
+      <Button handleClick={(e, id) => console.log('Button click', e, id)} />
+      <Input value="" handleChange={(e) => console.log(e)} />
     </div>
   );
 }
