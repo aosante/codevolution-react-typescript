@@ -26,6 +26,7 @@ const counterReducer = (
 };
 
 export const Counter = () => {
+  // typescript infers the action and state types from the passed reducer function
   const [{ count }, dispatch] = useReducer(counterReducer, intialState);
   return (
     <>
