@@ -1,6 +1,8 @@
 import './App.css';
 import { Button } from './components/Button';
 import { Container } from './components/Container';
+import { Box } from './components/context/Box';
+import { ThemeContextProvider } from './components/context/ThemeContext';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
@@ -40,6 +42,9 @@ function App() {
       <Button handleClick={(e, id) => console.log('Button click', e, id)} />
       <Input value="" handleChange={(e) => console.log(e)} />
       <Container styles={{ border: '1px solid red', padding: '1rem' }} />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
