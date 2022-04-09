@@ -11,8 +11,8 @@ import { ThemeContextProvider } from './components/context/ThemeContext';
 import { Box } from './components/context/Box';
 import { UserContextProvider } from './components/context/UserContext';
 import { User } from './components/context/User';
-// import { DomRef } from './components/refs/DomRef';
-// import { MutableRef } from './components/refs/MutableRef';
+import { DomRef } from './components/refs/DomRef';
+import { MutableRef } from './components/refs/MutableRef';
 import './App.css';
 import { Counter } from './components/class/Counter';
 import { List } from './components/generics/List';
@@ -65,8 +65,8 @@ function App() {
       <UserContextProvider>
         <User />
       </UserContextProvider>
-      {/* <DomRef />
-      <MutableRef /> */}
+      <DomRef />
+      <MutableRef />
       <Counter message="The count value is " />
       {/* <List
         items={['Batman', 'Superman', 'Wonder Woman']}
