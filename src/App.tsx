@@ -20,6 +20,8 @@ import { Toast } from './components/templateliterals/Toast';
 import { CustomButton } from './components/html/Button';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Text } from './components/polymorphic/Text';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 
 function App() {
   const personName = {
@@ -68,6 +70,7 @@ function App() {
       <DomRef />
       <MutableRef />
       <Counter message="The count value is " />
+      <Private isLoggedIn component={Profile} />
       {/* <List
         items={['Batman', 'Superman', 'Wonder Woman']}
         onClick={item => console.log(item)}
